@@ -6,13 +6,13 @@ Dieses mod generiert deutsche bzw. deutsch klingende Namen mit Spitznamen für d
 
 Es werden Vornamen mit Nach- oder Spitznamen in zufälliger Weise kombiniert, was in Namen wie
 
-   Rosa die Goldene
-   Klaus der Graue
-   Maximilian Goldlocke
-   Christiane Schafhirt
-   Philip der Freudige
-   Tilda Krähenblick
-   Max der Einfache
+    Rosa die Goldene
+    Klaus der Graue
+    Maximilian Goldlocke
+    Christiane Schafhirt
+    Philip der Freudige
+    Tilda Krähenblick
+    Max der Einfache
 
 usw.resultiert.
 Das Mod kann direkt aus dem Mod-Menü in Foundation heruntergeladen und installiert werden, hier findet sich der Quelltext.
