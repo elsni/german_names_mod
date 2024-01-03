@@ -35,7 +35,9 @@ local nickNameFemale = {
     "Jungfrau",
     "Tänzerin",
     "Zauberin",
-    "Badefrau"
+    "Badefrau",
+    "Mütterliche",
+    "Kräuterfrau"
 }
 
 local nickNameMale = {
@@ -93,7 +95,14 @@ local nickNameMale = {
     "Sachse",
     "Franke",
     "Slave",
-    "Schwede"
+    "Schwede",
+    "Landstreicher",
+    "Tagelöhner",
+    "Tunichtgut",
+    "Wilderer",
+    "Väterliche",
+    "Waldläufer",
+    "Steiger"
 }
 
 local nickNameCommon = {
@@ -134,9 +143,11 @@ local nickNameCommon = {
     "Reiche",
     "Lange",
     "Kurze",
+    "Wilde",
     "Schnelle",
     "Listige",
     "Verständige",
+    "Unreine",
     "Verwegene",
     "Traurige",
     "Rastlose",
@@ -237,6 +248,8 @@ local nickNameCommon = {
     "Vierte",
     "Fünfte",
     "Großzügige",
+    "Ungeschickte",
+    "Geschickte",
     "Geizige",
     "Scharfsinnige",
     "Glatte",
@@ -274,6 +287,9 @@ local nickNameNoPrefix = {
     "von der Vogelweide",
     "vom Strande",
     "von den Wäldern",
+    "aus dem Walde",
+    "von der Mühle",
+    "Eisenerz",
     "Gutherz",
     "Krähenblick",
     "Pechvogel",
@@ -343,6 +359,10 @@ local nickNameNoPrefix = {
     "Weinfreund",
     "das Tier",
     "Wagenschmied",
+    "Hasenfuß",
+    "Hasenohr",
+    "Rehbein",
+    "Rehauge",
     "Zitterhand",
     "Scharfauge",
     "Wolfstöter",
@@ -361,6 +381,8 @@ local nickNameNoPrefix = {
     "Kaufmann",
     "vom Pferde",
     "Kutscher",
+    "Ferneland",
+    "Rebenstock",
     "Steinhack",
     "Waldvogel",
     "Fischer",
@@ -491,6 +513,7 @@ local maleName = {
     "Finn",
     "Falk",
     "Felix",
+    "Friedhelm",
     "Ferdinand",
     "Fridolin",
     "Frowald",

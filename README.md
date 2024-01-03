@@ -15,7 +15,11 @@ Es werden Vornamen mit Nach- oder Spitznamen in zufälliger Weise kombiniert, wa
     Max der Einfache
 
 usw.resultiert.
+
 Das Mod kann direkt aus dem Mod-Menü in Foundation heruntergeladen und installiert werden, hier findet sich der Quelltext.
+
+Das Spiel wird beim Start mit jeweils 5000 Männer und Frauennamen versorgt.
+In seltenen Einzelfällen kann es vorkommen dass Namen doppelt vergeben werden.
 
 ----
 
