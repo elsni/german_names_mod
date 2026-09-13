@@ -1,11 +1,11 @@
 # German Names Mod
 
-## Deutsche Namen fuer Dorfbewohner in Foundation
+## Deutsche Namen für Dorfbewohner in Foundation
 
 Dieser Mod ersetzt die Standard-Namenslisten von Foundation durch deutsche bzw.
 deutsch klingende Namen mit mittelalterlich wirkenden Spitznamen.
 
-Seit Version 1.1.0 ueberschreibt der Mod alle aktuellen Foundation-`NAME_LIST_*`
+Seit Version 1.1.0 überschreibt der Mod alle aktuellen Foundation-`NAME_LIST_*`
 Assets, darunter `NAME_LIST_GERMAN`. Dadurch funktioniert er auch mit aktuellen
 Foundation-Versionen, die mehrere sprachspezifische Namenslisten verwenden.
 
@@ -17,29 +17,29 @@ Klaus der Graue
 Maximilian Goldlocke
 Christiane Schafhirt
 Philip der Freudige
-Tilda Kraehenblick
+Tilda Krähenblick
 Max der Einfache
 ```
 
-Das Spiel wird beim Start mit jeweils 5000 Maenner- und Frauennamen versorgt.
-In seltenen Einzelfaellen koennen Namen doppelt vergeben werden.
+Das Spiel wird beim Start mit jeweils 5000 Männer- und Frauennamen versorgt.
+In seltenen Einzelfällen können Namen doppelt vergeben werden.
 
 ## Installation
 
-Der Mod kann direkt aus dem Mod-Menue in Foundation heruntergeladen und
-installiert werden. Dieser Ordner enthaelt den Quelltext fuer mod.io.
+Der Mod kann direkt aus dem Mod-Menü in Foundation heruntergeladen und
+installiert werden. Dieser Ordner enthält den Quelltext für mod.io.
 
 ## Entwicklung
 
 Die Mod-Struktur folgt der aktuellen Foundation-Dokumentation:
 
-- `mod.json` enthaelt die frueh geladenen Metadaten.
+- `mod.json` enthält die früh geladenen Metadaten.
 - `mod.lua` ist der Einstiegspunkt.
-- `scripts/name.lua` erzeugt die Namen und ueberschreibt die Foundation-Assets.
-- `scripts/name_data/` enthaelt die Namens- und Spitznamenlisten.
+- `scripts/name.lua` erzeugt die Namen und überschreibt die Foundation-Assets.
+- `scripts/name_data/` enthält die Namens- und Spitznamenlisten.
 - `generated_ids.lua` wird mit ausgeliefert, damit Asset-IDs stabil bleiben.
 
-Fuehre vor einem Release die lokale Validierung aus:
+Führe vor einem Release die lokale Validierung aus:
 
 ```powershell
 powershell -ExecutionPolicy Bypass -File tests/validate_mod.ps1
