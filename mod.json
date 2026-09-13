@@ -1,7 +1,6 @@
 {
 	"Name": "German villager names with nicknames",
 	"Author": "Elsni",
-	"Description": "Replaces default villager names with German names and nicknames",
-	"Version": "1.0.0"
-
+	"Description": "Replaces Foundation's default villager name lists with German names and nicknames",
+	"Version": "1.1.0"
 }

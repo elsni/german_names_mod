@@ -1,32 +1,50 @@
 # German Names Mod
 
-## Deutsche Namen mod für Dorfbewohner für das Spiel "Foundation"
+## Deutsche Namen fuer Dorfbewohner in Foundation
 
-Dieses mod generiert deutsche bzw. deutsch klingende Namen mit Spitznamen für die Dorfbewohner im Spiel Foundation.
+Dieser Mod ersetzt die Standard-Namenslisten von Foundation durch deutsche bzw.
+deutsch klingende Namen mit mittelalterlich wirkenden Spitznamen.
 
-Es werden Vornamen mit Nach- oder Spitznamen in zufälliger Weise kombiniert, was in Namen wie
+Seit Version 1.1.0 ueberschreibt der Mod alle aktuellen Foundation-`NAME_LIST_*`
+Assets, darunter `NAME_LIST_GERMAN`. Dadurch funktioniert er auch mit aktuellen
+Foundation-Versionen, die mehrere sprachspezifische Namenslisten verwenden.
 
-    Rosa die Goldene
-    Klaus der Graue
-    Maximilian Goldlocke
-    Christiane Schafhirt
-    Philip der Freudige
-    Tilda Krähenblick
-    Max der Einfache
+Beispiele:
 
-usw.resultiert.
+```text
+Rosa die Goldene
+Klaus der Graue
+Maximilian Goldlocke
+Christiane Schafhirt
+Philip der Freudige
+Tilda Kraehenblick
+Max der Einfache
+```
 
-Das Mod kann direkt aus dem Mod-Menü in Foundation heruntergeladen und installiert werden, hier findet sich der Quelltext.
+Das Spiel wird beim Start mit jeweils 5000 Maenner- und Frauennamen versorgt.
+In seltenen Einzelfaellen koennen Namen doppelt vergeben werden.
 
-Das Spiel wird beim Start mit jeweils 5000 Männer und Frauennamen versorgt.
-In seltenen Einzelfällen kann es vorkommen dass Namen doppelt vergeben werden.
+## Installation
 
-----
+Der Mod kann direkt aus dem Mod-Menue in Foundation heruntergeladen und
+installiert werden. Dieser Ordner enthaelt den Quelltext fuer mod.io.
 
-## German names mod for villagers for the game "Foundation"
+## Entwicklung
 
-Mod for the game "Foundation". It gives villagers medieval sounding german names. It can be dowloaded and installed from the in-game mod menu.
+Die Mod-Struktur folgt der aktuellen Foundation-Dokumentation:
+
+- `mod.json` enthaelt die frueh geladenen Metadaten.
+- `mod.lua` ist der Einstiegspunkt.
+- `scripts/name.lua` erzeugt die Namen und ueberschreibt die Foundation-Assets.
+- `scripts/name_data/` enthaelt die Namens- und Spitznamenlisten.
+- `generated_ids.lua` wird mit ausgeliefert, damit Asset-IDs stabil bleiben.
+
+Fuehre vor einem Release die lokale Validierung aus:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File tests/validate_mod.ps1
+```
 
 ## Links
 
-[1] [Download mod from mod.io](https://mod.io/g/foundation/m/german-villager-names)
+[Download mod from mod.io](https://mod.io/g/foundation/m/german-villager-names)
