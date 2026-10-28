@@ -52,6 +52,11 @@ In seltenen Einzelfällen können Namen doppelt vergeben werden.
 Der Mod kann direkt aus dem Mod-Menü in Foundation heruntergeladen und
 installiert werden. Dieser Ordner enthält den Quelltext für mod.io.
 
+Das aktuelle GitHub-Paket ist **v1.1.0**:
+[german_names_mod_v1.1.0.zip](https://github.com/elsni/german_names_mod/releases/download/v1.1.0/german_names_mod_v1.1.0.zip).
+Das ZIP enthält die Mod-Dateien direkt im Hauptverzeichnis, einschließlich
+`generated_ids.lua` und aller Namenslisten unter `scripts/name_data/`.
+
 ## Entwicklung
 
 Die Mod-Struktur folgt der aktuellen Foundation-Dokumentation:
