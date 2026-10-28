@@ -6,8 +6,31 @@ Dieser Mod ersetzt die Standard-Namenslisten von Foundation durch deutsche bzw.
 deutsch klingende Namen mit mittelalterlich wirkenden Spitznamen.
 
 Seit Version 1.1.0 überschreibt der Mod alle aktuellen Foundation-`NAME_LIST_*`
-Assets, darunter `NAME_LIST_GERMAN`. Dadurch funktioniert er auch mit aktuellen
-Foundation-Versionen, die mehrere sprachspezifische Namenslisten verwenden.
+Assets, darunter `NAME_LIST_GERMAN`.
+
+## Kompatibilität
+
+Stand 28.10.2026: Die neueste in den offiziellen Steam-Ankündigungen aufgeführte
+Version ist **Foundation 1.12.0.16** (23.10.2026). Die acht überschriebenen
+Asset-IDs und die Eigenschaften `MaleNameList` / `FemaleNameList` stimmen mit
+der aktuellen Modding-Dokumentation überein. Im Changelog für 1.12 ist keine
+Änderung dieser Schnittstelle aufgeführt. Eine Anpassung des Mod-Codes ist
+nach diesem Abgleich nicht erforderlich.
+
+Der Lua-Ausführungstest prüft den echten Einstiegspunkt mit einer simulierten
+Foundation-API, alle acht Overrides und jeweils 5000 gültige Namen pro
+Geschlecht, einschließlich der Randwerte der Zufallsauswahl. Das bestätigt
+die Skriptfunktion, ersetzt aber keinen Test im Spiel. Das Laden unter
+1.12.0.16 sowie Namen neu einwandernder Dorfbewohner sind noch im Spiel zu prüfen.
+Andere Mods, die dieselben Namenslisten überschreiben, können das Ergebnis
+beeinflussen.
+
+Quellen:
+
+- [Offizielle Updates](https://steamcommunity.com/app/690830/announcements/)
+- [NAME_LIST-Assets](https://www.polymorph.games/foundation/modding/assets/name_list)
+- [NAME_LIST-Eigenschaften](https://www.polymorph.games/foundation/modding/api/name_list)
+- [Modding-Changelog 1.12](https://www.polymorph.games/foundation/modding/changelog/1.12)
 
 Beispiele:
 
@@ -40,6 +63,14 @@ Die Mod-Struktur folgt der aktuellen Foundation-Dokumentation:
 - `generated_ids.lua` wird mit ausgeliefert, damit Asset-IDs stabil bleiben.
 
 Führe vor einem Release die lokale Validierung aus:
+
+Lua-Ausführungstest (Lua 5.4, aus dem Projektverzeichnis):
+
+```sh
+lua tests/test_mod.lua
+```
+
+Zusätzliche Strukturprüfung unter Windows/PowerShell:
 
 ```powershell
 powershell -ExecutionPolicy Bypass -File tests/validate_mod.ps1
